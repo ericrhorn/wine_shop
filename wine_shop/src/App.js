@@ -1,16 +1,31 @@
-import './App.css';
-import Stag from './components/Stag';
-
+// import './App.css';
+import {HashRouter, Routes, Route} from 'react-router-dom'
+import Nav from './components/Nav';
+import Home from './components/Home';
+import Store from './components/Store';
+import LoginReg from './components/LoginReg';
+import About from './components/About';
+import Banner from './components/Banner';
 
 function App() {
   return (
-    <div className="App" style={{backgroundColor: 'lightblue', height: '100vh'}}>
-     
-      <h1>Hello World</h1>
-      <div style={{height: '500px', border:'solid black 1px'}}>
-        <Stag/>
-      </div>
-    </div>
+    <>
+    {/* <BrowserRouter> */}
+      <HashRouter basename='/'>
+        <Nav/>
+        <Banner/>
+          <Routes>
+            <Route exact path='/' element={<Home/>}/>
+            <Route exact path='/store' element={<Store/>}/>
+            <Route exact path='/login' element={<LoginReg/>}/>
+            <Route exact path='/about' element={<About/>}/>
+
+          </Routes>
+        </HashRouter>
+      {/* </BrowserRouter> */}
+      {/* <Footer/> */}
+    </>
+   
   );
 }
 
