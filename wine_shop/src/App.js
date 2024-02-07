@@ -6,16 +6,19 @@ import Store from './components/Store';
 import LoginReg from './components/LoginReg';
 import About from './components/About';
 import Banner from './components/Banner';
+import Footer from './components/Footer';
 import "@fontsource/open-sans";
 
 function App() {
   return (
     <>
     {/* <BrowserRouter> */}
+    
       <HashRouter basename='/'>
         <Nav/>
         <Banner/>
           <Routes>
+            
             <Route exact path='/' element={<Home/>}/>
             <Route exact path='/store' element={<Store/>}/>
             <Route exact path='/login' element={<LoginReg/>}/>
@@ -23,10 +26,10 @@ function App() {
 
           </Routes>
         </HashRouter>
+        <Footer/>
       {/* </BrowserRouter> */}
       {/* <Footer/> */}
     </>
-   
   );
 }
 

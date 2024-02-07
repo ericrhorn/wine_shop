@@ -31,7 +31,9 @@ function Home() {
                   <h1 style={{fontFamily: 'Open Sans', textTransform: 'uppercase'}}>
                     Wine Club
                   </h1>
-                  <p>Duarum enim vitarum nobis erunt instituta capienda. Hunc vos beatum; Igitur ne dolorem quidem. Est enim effectrix multarum et magnarum voluptatum. Nec enim, dum metuit, iustus est, et certe, si metuere destiterit, non erit;</p>
+                  <div style={{padding: '0px 25px'}}>
+                    <p>Duarum enim vitarum nobis erunt instituta capienda. Hunc vos beatum; Igitur ne dolorem quidem. Est enim effectrix multarum et magnarum voluptatum. Nec enim, dum metuit, iustus est, et certe, si metuere destiterit, non erit;</p>
+                  </div>
                 </div>
               </Grid>
               <Grid style={{padding: '10px',textAlign: 'center'}} item xs={12} sm={6} md={3} lg={3}>
@@ -42,7 +44,9 @@ function Home() {
                   <h1 style={{fontFamily: 'Open Sans', textTransform: 'uppercase'}}>
                     Tasting Room
                   </h1>
-                  <p>Duarum enim vitarum nobis erunt instituta capienda. Hunc vos beatum; Igitur ne dolorem quidem. Est enim effectrix multarum et magnarum voluptatum. Nec enim, dum metuit, iustus est, et certe, si metuere destiterit, non erit;</p>
+                  <div style={{padding: '0px 25px'}}>
+                    <p>Duarum enim vitarum nobis erunt instituta capienda. Hunc vos beatum; Igitur ne dolorem quidem. Est enim effectrix multarum et magnarum voluptatum. Nec enim, dum metuit, iustus est, et certe, si metuere destiterit, non erit;</p>
+                  </div>
                 </div>
               </Grid>
               <Grid style={{padding: '10px',textAlign: 'center'}} item xs={12} sm={6} md={3} lg={3}>
@@ -53,7 +57,9 @@ function Home() {
                   <h1 style={{fontFamily: 'Open Sans', textTransform: 'uppercase'}}>
                     Cuisine
                   </h1>
-                  <p>Duarum enim vitarum nobis erunt instituta capienda. Hunc vos beatum; Igitur ne dolorem quidem. Est enim effectrix multarum et magnarum voluptatum. Nec enim, dum metuit, iustus est, et certe, si metuere destiterit, non erit;</p>
+                  <div style={{padding: '0px 25px'}}>
+                    <p>Duarum enim vitarum nobis erunt instituta capienda. Hunc vos beatum; Igitur ne dolorem quidem. Est enim effectrix multarum et magnarum voluptatum. Nec enim, dum metuit, iustus est, et certe, si metuere destiterit, non erit;</p>
+                  </div>
                 </div>
               </Grid>
               <Grid style={{padding: '10px',textAlign: 'center'}} item xs={12} sm={6} md={3} lg={3}>
@@ -64,11 +70,19 @@ function Home() {
                   <h1 style={{fontFamily: 'Open Sans', textTransform: 'uppercase'}}>
                     Book Events
                   </h1>
-                  <p>Duarum enim vitarum nobis erunt instituta capienda. Hunc vos beatum; Igitur ne dolorem quidem. Est enim effectrix multarum et magnarum voluptatum. Nec enim, dum metuit, iustus est, et certe, si metuere destiterit, non erit;</p>
+                  <div style={{padding: '0px 25px'}}>
+                    <p>Duarum enim vitarum nobis erunt instituta capienda. Hunc vos beatum; Igitur ne dolorem quidem. Est enim effectrix multarum et magnarum voluptatum. Nec enim, dum metuit, iustus est, et certe, si metuere destiterit, non erit;</p>
+                  </div>
                 </div>
               </Grid>
           </Grid>
         </Box>
+      </div>
+      <div>
+        <h1>Image Caracel</h1>
+      </div>
+      <div>
+        <h1>Questions Form</h1>
       </div>
 
       {/* <div>
