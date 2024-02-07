@@ -6,6 +6,7 @@ import Store from './components/Store';
 import LoginReg from './components/LoginReg';
 import About from './components/About';
 import Banner from './components/Banner';
+import "@fontsource/open-sans";
 
 function App() {
   return (
