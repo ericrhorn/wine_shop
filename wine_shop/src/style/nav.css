@@ -30,14 +30,12 @@
   padding-top: 10px;
   display: inline-flex;
   font-size: 20px;
-  float: right;
 }
 
 .hamIcon{
   padding-top: 5px;
   display: inline-flex;
   display: none;
-   float: right;
 }
 .hamLinks{
   display: none;
@@ -62,9 +60,9 @@
     text-align: center;
     flex-direction: column;
     position: absolute;
-    width: 100%;
+    width: 93%;
     background-color: white;
-    margin-top: 380px;
+    margin-top: 280px;
   }
   .hamLinks, Link{
     display: flex;

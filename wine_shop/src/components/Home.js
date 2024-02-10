@@ -2,6 +2,9 @@ import React from 'react'
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
+import { ContactForm } from './ContactForm';
+import HomeImages from './HomeImages';
+
 import wineClub from '../assets/wine_club_2.jpeg'
 import tasting from '../assets/tasting.jpeg'
 import food from '../assets/food.jpeg'
@@ -79,10 +82,10 @@ function Home() {
         </Box>
       </div>
       <div>
-        <h1>Image Caracel</h1>
+        <HomeImages/>
       </div>
       <div>
-        <h1>Questions Form</h1>
+        <ContactForm/>
       </div>
 
       {/* <div>
