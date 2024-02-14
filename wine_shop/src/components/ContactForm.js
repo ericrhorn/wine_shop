@@ -1,110 +1,111 @@
 import React from 'react';
-import { Box, TextField, Button, FormControl, InputLabel, Select, MenuItem, Grid, CardHeader, CardContent, Card} from '@mui/material';
-import {Form, Field } from "formik"
-import Img from "../assets/vinyard.jpeg"
-// import '../style/contact.css'
-
+import { Box, TextField, Button, MenuItem, Grid } from '@mui/material';
+import winery from "../assets/winery.jpeg";
 
 export const ContactForm = () => {
-
-  
-
   const inquiries = [
-    {value: 'Wine Club', label: 'Wine Club'},
-    {value: 'Wine Club', label: 'Wine Club'},
-    {value: 'Wine Club', label: 'Wine Club'},
-    {value: 'Wine Club', label: 'Wine Club'},
-    {value: 'Wine Club', label: 'Wine Club'}
-  ]
-  
+    { value: 'Wine Club', label: 'Wine Club' },
+    { value: 'Wine Club', label: 'Wine Club' },
+    { value: 'Wine Club', label: 'Wine Club' },
+    { value: 'Wine Club', label: 'Wine Club' },
+    { value: 'Wine Club', label: 'Wine Club' }
+  ];
+
   return (
-    <>
-   <Box
-   display="flex"
+    <Box
+      display="flex"
       flexDirection="column"
       alignItems="center"
       justifyContent="center"
       style={{
-        backgroundImage: `url(${Img})`,
+        backgroundImage: `url(${winery})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         height: '800px', // Adjust the height as needed
-        // padding: '50px 0', // Add padding to ensure content is not covered by the image
       }}
     >
-      {/* <Box
-        component="form"
-        sx={{
-          '& .MuiTextField-root': { m: 1, width: '700px', maxWidth: '100%' },
-        }}
-        noValidate
-        autoComplete="off"
-        style={{ border: 'solid black 1px', maxWidth: '1000px', width: '100%', textAlign: 'center', padding: '20px' }}
-      > */}
-        <Box
-        display="flex"
-        flexDirection="column"
+      <Grid
+        container
+        spacing={2}
+        direction="column"
+        justifyContent="center"
         alignItems="center"
-        maxWidth="800px"
-        width="100%"
-        p="20px"
-        bgcolor="rgba(255, 255, 255, .7)"
-        >
-          <div>
-            <div>
-              <h1>Questions?</h1>
-            </div>
+        style={{ maxWidth: '800px', width: '100%', padding: '20px' }}
+      >
+        <h1>Questions?</h1>
+        <Grid item container spacing={2}>
+          <Grid item xs={12} sm={6}>
             <TextField
-              sx={{ m: 1, width: '35ch' }}
-              // required
+              style={{ backgroundColor: 'white'}}
+              fullWidth
               id="name"
               label="Name"
-              // defaultValue="Hello World"
+              variant='filled'
             />
+          </Grid>
+          <Grid item xs={12} sm={6}>
             <TextField
-             sx={{ m: 1, width: '35ch' }}
-              // disabled
+              style={{ backgroundColor: 'white' }}
+              fullWidth
               id="email"
               label="Email"
-              // defaultValue="Hello World"
+              variant='filled'
             />
+          </Grid>
+        </Grid>
+        <Grid item container spacing={2}>
+          <Grid item xs={12} sm={6}>
             <TextField
-             sx={{ m: 1, width: '35ch' }}
-              id="outlined-password-input"
+              style={{ backgroundColor: 'white' }}
+              fullWidth
+              id="phone number"
               label="Phone Number"
-              type="password"
-              autoComplete="current-password"
+
+              variant='filled'
             />
-              <TextField
-               sx={{ m: 1, width: '35ch' }}
-                id="inquiry"
-                select
-                label="Inquiry"
-              >
-                {inquiries.map((option) => (
-                  <MenuItem key={option.value} value={option.value}>
-                    {option.label}
-                  </MenuItem>
-                ))}
-              </TextField>
-              <TextField
-                sx={{m: 1}}
-                fullWidth
-                id="outlined-multiline-static"
-                label="Multiline"
-                multiline
-                rows={6}
-                defaultValue="Default Value"
-              />
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <TextField
+              style={{ backgroundColor: 'white' }}
+              fullWidth
+              id="inquiry"
+              select
+              label="Inquiry"
+              variant='filled'
+            >
+              {inquiries.map((option) => (
+                <MenuItem key={option.value} value={option.value}>
+                  {option.label}
+                </MenuItem>
+              ))}
+            </TextField>
+          </Grid>
+        </Grid>
+        <Grid item container spacing={2}>
+          <Grid item xs={12} sm={12}>
+          <TextField
+            style={{ backgroundColor: 'white' }}
+            fullWidth
+            id="outlined-multiline-static"
+            label="Question"
+            multiline
+            rows={6}
+            // defaultValue="Default Value"
+            variant='filled'
+          />
+          </Grid>
 
-          </div>
-          <div>
-            <Button variant="outlined" >Outlined</Button>
-          </div>
-
-        </Box>
-      {/* </Box> */}
+        </Grid>
+        <Grid 
+          item container spacing={2}
+          alignItems="center"
+          justifyContent="center"
+          >
+          <Grid item>
+          <Button variant="contained">Submit Question</Button>
+          </Grid>
+        </Grid>
+      </Grid>
     </Box>
-    </>
   );
 };
