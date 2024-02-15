@@ -101,10 +101,10 @@ function Home() {
           </Grid>
         </Box>
       </div>
-      <div>
+      <div style={{width: '100%'}}>
         <HomeImages/>
       </div>
-      <div >
+      <div>
         <ContactForm/>
       </div>
 

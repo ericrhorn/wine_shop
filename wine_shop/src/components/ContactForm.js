@@ -21,7 +21,7 @@ export const ContactForm = () => {
         backgroundImage: `url(${winery})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        height: '800px', // Adjust the height as needed
+        height: '700px', // Adjust the height as needed
       }}
     >
       <Grid
