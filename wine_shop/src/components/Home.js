@@ -101,7 +101,7 @@ function Home() {
           </Grid>
         </Box>
       </div>
-      <div style={{width: '100%'}}>
+      <div>
         <HomeImages/>
       </div>
       <div>
